@@ -1,4 +1,5 @@
 import React from 'react';
+import { BusinessList } from './BusinessList';
 
 let sortMethod = 'best_match';
 
@@ -43,8 +44,7 @@ export function SearchBar() {
 export function SearchResults() {
     return (
         <div className='search-results'>
-            <h2>Results</h2>
-            {/* Placeholder */}
+            <BusinessList />
         </div>
     )
 }
