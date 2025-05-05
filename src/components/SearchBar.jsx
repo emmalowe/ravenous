@@ -1,23 +1,22 @@
 import React from 'react';
 import { BusinessList } from './BusinessList';
+import styles from './SearchBar.module.css';
 
-let sortMethod = 'best_match';
+let sortMethod='best_match';
 
 function handleSortTypeSelect(event) {
     const elements = event.target.parentNode.querySelectorAll('p');
     elements.forEach((element) => {
-        if (element.innerHTML[0] === '*') {
-            element.innerHTML = element.innerHTML.slice(2);
-        }
+        element.style.fontWeight = 'normal';
     })
-    event.target.innerHTML = '* ' + event.target.innerHTML;
+    event.target.style.fontWeight = 'bold';
     sortMethod = event.target.id;
 }
 
 function SortSelection() {
     return (
-        <div className='sort-type'>
-            <p id='best_match' onClick={handleSortTypeSelect}>* Best Match</p>
+        <div className={styles.sortType}>
+            <p style={{'fontWeight': 'bold'}} id='best_match' onClick={handleSortTypeSelect}>Best Match</p>
             <p id='rating' onClick={handleSortTypeSelect}>Highest Rated</p>
             <p id='review_count' onClick={handleSortTypeSelect}>Most Reviewed</p>
         </div>
