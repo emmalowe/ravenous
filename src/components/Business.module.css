@@ -1,0 +1,66 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.business {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    margin: 2.5%;
+}
+
+.business .imageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.business img {
+    width: 100%;
+}
+
+.business h2 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.business .information {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.business .address {
+    display: flex;
+    flex-direction: column;
+}
+
+.business .address p {
+    text-align: left;
+}
+
+
+.business .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.business .details p {
+    text-align: right
+}
+
+.business .category {
+    color: darkgoldenrod;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.business .rating {
+    color: darkgoldenrod;
+}
