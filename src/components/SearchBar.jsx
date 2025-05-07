@@ -24,7 +24,7 @@ function SortSelection() {
 }
 
 function handleSubmit(event) {
-    // Ping the Yelp API
+    
 }
 
 export function SearchBar() {

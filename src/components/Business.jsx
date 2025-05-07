@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles/Business.module.css';
 
-export const business = {
+export const exampleBusiness = {
   imageSrc: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
   name: 'MarginOtto Pizzeria',
   address: '1010 Paddington Way',
@@ -13,7 +13,7 @@ export const business = {
   reviewCount: 90
 };
 
-export function Business() {
+export function Business( {business} ) {
   return (
     <div className={styles.business}>
       <div className={styles.imageContainer}>

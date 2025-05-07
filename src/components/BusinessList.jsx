@@ -1,16 +1,21 @@
 import React from 'react';
 import { Business } from './Business';
 
-export function BusinessList() {
+export function BusinessList( {businesses} ) {
+    if (businesses.length === 0) {
+        return (
+            <div>
+                <h2>No results found</h2>
+            </div>
+        )
+    } 
 
-    let count=0;
-    let numberOfBusinesses = Math.floor(Math.random() * 5) + 1;
     let businessList = [];
-    while (count < numberOfBusinesses) {
-        businessList.push(<Business />);
-        count++;
-    }
-
+    businesses.forEach(business => {
+        businessList.push(
+            <Business business={business}/>
+        )
+    });
     return (
         <div>
             {businessList}
