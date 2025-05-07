@@ -39,11 +39,3 @@ export function SearchBar() {
         </div>
     )
 }
-
-export function SearchResults() {
-    return (
-        <div className='search-results'>
-            <BusinessList />
-        </div>
-    )
-}

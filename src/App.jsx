@@ -1,17 +1,14 @@
-import { SearchBar, SearchResults } from './components/SearchBar';
 import React from 'react';
 import styles from './App.module.css';
+import { SearchBar } from './components/SearchBar';
+import { BusinessList } from './components/BusinessList';
 
 function App() {
   return (
     <div>
       <h1>ravenous</h1>
-      <div className="search-bar">
-        <SearchBar />
-      </div>
-      <div className="search-results">
-        <SearchResults />
-      </div>
+      <SearchBar />
+      <BusinessList />
     </div>
   )
 }
