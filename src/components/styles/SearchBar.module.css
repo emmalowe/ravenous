@@ -6,7 +6,7 @@
 }
 
 
-input {
+.input {
     width: 20%;
     padding: 0.5rem;
     margin: 1rem 20px;
@@ -15,7 +15,7 @@ input {
     border-radius: 5px;
 }
 
-button {
+.button {
     background-color: darkgoldenrod;
     color: cornsilk;
     padding: 0.5rem 1rem;

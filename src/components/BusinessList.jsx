@@ -12,7 +12,7 @@ export function BusinessList() {
     }
 
     return (
-        <div className='business-list'>
+        <div>
             {businessList}
         </div>
     )

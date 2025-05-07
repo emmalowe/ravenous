@@ -1,6 +1,6 @@
 import React from 'react';
 import { BusinessList } from './BusinessList';
-import styles from './SearchBar.module.css';
+import styles from './styles/SearchBar.module.css';
 
 let sortMethod='best_match';
 
@@ -29,12 +29,12 @@ function handleSubmit(event) {
 
 export function SearchBar() {
     return (
-        <div className='search-bar'>
+        <div>
             <SortSelection />
             <form action='#' onSubmit={handleSubmit}>
-                <input name='term' type='text' placeholder='Search Businesses' />
-                <input name='location' type='text' placeholder='Where?' />
-                <button type='submit'>Let's go</button>
+                <input className={styles.input} name='term' type='text' placeholder='Search Businesses' />
+                <input className={styles.input} name='location' type='text' placeholder='Where?' />
+                <button className={styles.button} type='submit'>Let's go</button>
             </form>
         </div>
     )

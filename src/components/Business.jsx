@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Business.module.css';
+import styles from './styles/Business.module.css';
 
 export const business = {
   imageSrc: 'https://content.codecademy.com/programs/react/ravenous/pizza.jpg',
