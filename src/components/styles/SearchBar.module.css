@@ -1,12 +1,21 @@
-.sortType p {
+.radioHidden {
+    display: none;
+} 
+
+.radioLabel {
     margin: 8% 0 1rem 0;
     padding: 5px 25px;
     display: inline-block;
     border-bottom: solid 1px black;
+    cursor: pointer;
+    user-select: bold;
 }
 
+.radioHidden:checked + .radioLabel {
+    font-weight: bold;
+  }
 
-.input {
+.inputText {
     width: 20%;
     padding: 0.5rem;
     margin: 1rem 20px;
@@ -15,7 +24,7 @@
     border-radius: 5px;
 }
 
-.button {
+.buttonSubmit {
     background-color: darkgoldenrod;
     color: cornsilk;
     padding: 0.5rem 1rem;
