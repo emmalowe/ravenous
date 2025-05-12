@@ -29,7 +29,7 @@ export function SearchBar() {
     }
 
     return (
-        <div>
+        <div className={styles.searchBar}>
             <form action='#' onSubmit={handleOnSubmit}>
                 <div>
                     <input className={styles.radioHidden} type="radio" id="option_1" name="choice" value='best_match' onChange={handleOnChangeRadio} checked={sortBy === 'best_match'}/>

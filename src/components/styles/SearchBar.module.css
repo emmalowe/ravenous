@@ -1,18 +1,30 @@
+.searchBar {
+    background-image: url('../../assets/background_search_desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 4.5rem;
+    height: 25rem;
+}
+
 .radioHidden {
     display: none;
 } 
 
 .radioLabel {
-    margin: 8% 0 1rem 0;
+    margin: 8rem 0 1rem 0;
     padding: 5px 25px;
     display: inline-block;
-    border-bottom: solid 1px black;
+    color: white;
+    border-bottom: solid 1px white;
     cursor: pointer;
     user-select: bold;
 }
 
 .radioHidden:checked + .radioLabel {
     font-weight: bold;
+    color: goldenrod;
+    border-bottom: solid 1px goldenrod;
   }
 
 .inputText {
