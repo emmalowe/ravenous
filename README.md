@@ -13,8 +13,8 @@ This is an example project from Codecademy. I created a restaurant search engine
 - How to recreate a radio button using \<p> elements 🫠
 - CSS modules
 - async/await functionality
-- handling state
-- passing props between components
+- Handling state
+- Passing props between components
 
 ## Future work
 
