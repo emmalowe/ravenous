@@ -20,5 +20,5 @@ This is an example project from Codecademy. I created a restaurant search engine
 
 - Testing!
 - Update page to comply with Yelp's display requirements: https://terms.yelp.com/developers/display_requirements/
-- Convert Javascript to Typescript
+- Convert JavaScript to TypeScript
 - Continue working on formatting, including for mobile use
