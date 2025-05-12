@@ -10,12 +10,12 @@ function App() {
   let numberOfBusinesses = Math.floor(Math.random() * 6);
   let exampleBusinesses = Array(numberOfBusinesses).fill(exampleBusiness);
 
-  const [businesses, setBusinesses] = useState(exampleBusinesses);
+  const [businesses, setBusinesses] = useState([]);
 
   return (
     <div>
       <h1>ravenous</h1>
-      <SearchBar />
+      <SearchBar setBusinesses={setBusinesses}/>
       <BusinessList businesses={businesses}/>
     </div>
   )

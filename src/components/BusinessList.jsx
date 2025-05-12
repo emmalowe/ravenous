@@ -1,11 +1,12 @@
 import React from 'react';
+import styles from './styles/BusinessList.module.css';
 import { Business } from './Business';
 
 export function BusinessList( {businesses} ) {
     if (businesses.length === 0) {
         return (
-            <div>
-                <h2>No results found</h2>
+            <div className={styles.noResults}>
+                <h2>No results</h2>
             </div>
         )
     } 
@@ -13,7 +14,7 @@ export function BusinessList( {businesses} ) {
     let businessList = [];
     businesses.forEach(business => {
         businessList.push(
-            <Business business={business}/>
+            <Business key={business.id} business={business}/>
         )
     });
     return (
